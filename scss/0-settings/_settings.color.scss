@@ -1,0 +1,123 @@
+/* ==========================================================================
+   #COLOR PALETTE
+   ========================================================================== */
+
+/**
+ * Color palette
+ */
+
+$palette-color: (
+	"tgia": (
+		"primary": 						#0B3780,
+		"secondary": 					#E1F4FD,
+		"blue": 								#006CB7,
+		"white": 							#FFFFFF,
+		"navy": 								#003764,
+		"red": 									#d2222a
+	)
+);
+
+
+
+/**
+ * Status color palette
+ */
+
+$status-color: (
+	"status": (
+		"active": 							#2847e0,
+		"done": 								#6bdc86,
+		"discount": 						#129f6c,
+		"error": 								#d13135,
+		"error-bg": 						#fbc1c3,
+		"disabled": 						#e4e7f0,
+		"normal": 							#fff
+	)
+);
+
+
+
+/**
+ * Package color palette
+ */
+
+$package-color: (
+	"package": (
+		"shock": 							#ffd194,
+		"lady": 								#ffc3c3,
+		"standard": 						#d0e2ce,
+		"senior": 							#cfc1b5,
+		"two": 								#deccf5,
+		"three": 								#bbd0ff
+	)
+);
+
+
+
+/**
+ * Type color palette
+ */
+
+$type-color: (
+	"primary": (
+		"normal": 				#534ae3,
+		"disabled":      		#eaeafd
+	),
+	"secondary": (
+		"normal": 				#42b983,
+		"disabled":      		#e4fce9
+	),
+	"info": (
+		"normal": 				#008fe8,
+		"disabled":      		#ddf6ff
+	),
+	"success": (
+		"normal": 				#00c97b,
+		"disabled":      		#e4fce9
+	),
+	"warning": (
+		"normal": 				#ff8605,
+		"disabled":      		#fff8de
+	),
+	"danger": (
+		"normal": 				#fa6363,
+		"disabled":     		#ffdede
+	),
+	"purple-gradient": (
+		"bg1": 					#8c4be8,
+		"bg2": 					#f951da,
+		"txt":   			    #fff
+	),
+	"red-gradient": (
+		"bg1": 					#ff5369,
+		"bg2": 					#ff8306,
+		"txt":   			    #fff
+	),
+	"blue-gradient": (
+		"bg1": 					#2578da,
+		"bg2": 					#4cd1ff,
+		"txt":   			    #fff
+	),
+	"green-gradient": (
+		"bg1": 					#138543,
+		"bg2": 					#8fc742,
+		"txt":   			    #fff
+	)
+);
+
+
+
+/**
+ * Social color
+ */
+
+$social-color: (
+ 	"facebook":     	 #1877f2,
+ 	"twitter":      	 #00aced,
+ 	"googleplus":     	 #dd4b39,
+ 	"youtube":      	 #ff0000,
+ 	"instagram":   		 #125688,
+ 	"linkedin":    		 #007bb5,
+ 	"pinterest":   		 #cb2027,
+ 	"line":     		 #00b900
+);

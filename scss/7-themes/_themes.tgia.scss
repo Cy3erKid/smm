@@ -1,0 +1,511 @@
+/* ==========================================================================
+   #TGIA
+   ========================================================================== */
+
+.site-header {
+	background: url(#{$img-path}/header-bg-small.jpg) no-repeat;
+	background-size: cover;
+	height: 63px;
+	padding: 18px 0 0 15px;
+
+	@include mq(tablet) {
+		height: 120px;
+		padding-top: 35px;
+		padding-left: 40px;
+
+		.logo {
+			@include replace-text-with-img("logo.svg", center center, 274px, 50px);
+		}
+	}
+
+	@include mq(desktop) {
+		background: url(#{$img-path}/header-bg.jpg) no-repeat;
+		background-position: right top;
+		height: 89px;
+		padding-top: 20px;
+		padding-left: 40px;
+		text-align: center;
+
+		.logo {
+			@include replace-text-with-img("logo.svg", center center, 274px, 50px);
+		}
+	}
+}
+
+.site-logo {
+	display: inline-block;
+	vertical-align: top;
+
+	@include mq(desktop) {
+		float: left;
+	}
+}
+
+.site-slogan {
+	display: none;
+
+	@include mq(desktop) {
+		display: inline-block;
+		margin-left: -274px;
+		vertical-align: top;
+	}
+}
+
+.site-footer {
+	background: url(#{$img-path}/footer-bg-small.jpg) no-repeat;
+	background-size: cover;
+	height: 85px;
+	padding: 15px 0 0 80px;
+	position: relative;
+	overflow: hidden;
+
+	@include mq(desktop) {
+		background: url(#{$img-path}/footer-bg.jpg) no-repeat;
+		background-position: right top;
+		height: 151px;
+		padding-top:  25px;
+		padding-left: 190px;
+	}
+}
+
+.flag {
+	position: absolute;
+	top: -10px;
+	left: -50px;
+
+	@include mq(desktop) {
+		top: -15px;
+		left: -60px;
+
+		.logo-flag {
+			@include replace-text-with-img("flag.svg", center center, 245px, 141px);
+		}
+	}
+}
+
+.address {
+	font-size: .9em;
+	line-height: 1;
+	margin-bottom: 0;
+
+	@include mq(desktop) {
+		font-size: 1.65em;
+	}
+}
+
+.cta {
+	background-color: palette-color("tgia", "blue");
+	display: flex;
+	justify-content: center;
+	padding: 0 20px;
+
+	@include mq(tablet) {
+		padding: 10px 100px 0;
+	}
+}
+
+.site-main {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.breadcrumb {
+	background-color: palette-color("tgia", "secondary");
+	margin: 0;
+	padding: 0 40px 20px;
+
+	ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+		width: 100%;
+		position: relative;
+		text-align: center;
+
+		&:before {
+			content: "";
+			border-top: 2px solid #a5a9aa;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 40px;
+			right: 40px;
+			z-index: 10;
+		}
+	}
+
+	li, a {
+		color: #0072bb;
+		display: block;
+		font-family: $db-bd;
+		font-size: 18px;
+		line-height: .9;
+		text-align: center;
+		z-index: 20;
+	}
+
+	@each $bc in 1, 2, 3, active {
+		.bc-#{$bc} {
+			background-image: url(#{$img-path}/bc-#{$bc}.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 70px 66px;
+			padding: 80px 10px 0;
+
+			@include mq(tablet) {
+				background-size: 100px 95px;
+				padding-top: 120px;
+			}
+		}
+	}
+
+	@include mq(tablet) {
+		padding: 10px 120px 30px;
+
+		li, a {
+			font-size: 26px;
+		}
+	}
+
+	@include mq(desktop) {
+		padding: 10px 170px 30px;
+	}
+}
+
+.form {
+	background-image: linear-gradient(to bottom, palette-color("tgia", "blue") 5%, #5eacdb 25%, #ceedfc 55%, palette-color("tgia", "secondary") 80%);
+	padding: 30px 35px;
+
+	.step-2 &, .step-3 & {
+		padding: 15px 30px 30px;
+
+		p {
+			font-family: $db-bd;
+			font-size: 1.4em;
+			line-height: 1;
+		}
+	}
+
+	@include mq(tablet) {
+		padding: 30px 120px;
+	}
+
+	@include mq(desktop) {
+		padding: 30px 150px;
+	}
+
+	label {
+		color: palette-color("tgia", "navy");
+		font-family: $db-bd;
+		font-size: 1.5em;
+		line-height: 1.2;
+		margin-bottom: 0;
+	}
+
+	input {
+		color: palette-color("tgia", "navy");
+		font-family: $db-bd;
+		font-size: 1.6em;
+		line-height: 1.2;
+		padding: 7px 10px;
+
+		.step-2 &, .step-3 & {
+			margin-bottom: 5px;
+		}
+	}
+
+	.price {
+		color: palette-color("tgia", "navy");
+		font-family: $db-bd;
+		font-size: 1.8em;
+		text-align: center;
+	}
+
+	.datepicker {
+		position: relative;
+		padding: 0;
+
+		@include mq(desktop) {
+			width: 70%;
+		}
+
+		&:after {
+			background-color: palette-color("tgia", "blue");
+			content: "";
+			display: block;
+			position: absolute;
+			top: 28px;
+			right: 0;
+			height: 46px;
+			width: 50%;
+		}
+	}
+
+	.secondary-btn {
+		background-color: palette-color("tgia", "red");
+		border: none;
+		color: #fff;
+		display: block;
+		font-family: $db-bd;
+		font-size: 3em;
+		margin: 70px auto 20px;
+		padding: 3px 10px;
+		width: 215px;
+
+		@include mq(desktop) {
+			font-size: 2.4em;
+			margin: 60px auto 20px;
+			padding: 1px 10px;
+			width: 250px;
+		}
+	}
+
+	.topic {
+		font-family: $db-bd;
+		font-size: 2.3em;
+		margin-bottom: 5px;
+	}
+
+	.title {
+		color: palette-color("tgia", "navy");
+		font-family: $db-bd;
+		font-size: 2.1em;
+		line-height: 1;
+		margin-top: 30px;
+		margin-bottom: 5px;
+	}
+
+	input[type=radio], input[type=checkbox] {
+		position: absolute;
+		clip: rect(0, 0, 0, 0);
+		pointer-events: none;
+	}
+
+	.radio, .checkbox {
+
+		label {
+			background-image: url(#{$img-path}/radio.png);
+			background-size: 32px 29px;
+			background-position: top 0px left -5px;
+			background-repeat: no-repeat;
+			cursor: pointer;
+			display: block;
+			font-size: 1.3em;
+			line-height: 1;
+			padding-top: 7px;
+			padding-left: 30px;
+			margin-bottom: 10px;
+
+			&.active {
+				background-image: url(#{$img-path}/radio-check.png);
+			}
+		}
+	}
+}
+
+.address-section, .beneficiary-section {
+
+	.radio {
+		display: flex;
+
+		label {
+			margin-right: 10px;
+			width: 50%;
+		}
+	}
+}
+
+._2field {
+	display: flex;
+	justify-content: space-between;
+
+	> input {
+		width: calc((100% - 15px) / 2);
+	}
+}
+
+._3field {
+	display: flex;
+	justify-content: space-between;
+
+	> input {
+		width: calc((100% - 15px) / 3);
+	}
+}
+
+._2group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	> .form-group {
+		width: calc((100% - 15px) / 2);
+	}
+}
+
+.step-2 {
+
+	textarea {
+		height: 100px;
+		margin-bottom: 5px;
+	}
+
+	.secondary-btn {
+		font-size: 2em;
+		margin-top: 30px;
+		width: 150px;
+	}
+
+	@include mq(desktop) {
+
+		.form {
+			padding: 30px 90px;
+		}
+
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.title {
+			width: 100%;
+		}
+
+		.clear {
+			width: 100%;
+		}
+
+		.secondary-btn {
+			width: 200px;
+		}
+
+		.personal-section, .beneficiary-section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.form-group {
+				width: calc((100% - 15px) / 2);
+			}
+		}
+
+		.address-section {
+
+			.form-group {
+				width: calc((100% - 45px) / 4);
+
+				&:last-child {
+					margin-left: 15px;
+					margin-right: auto;
+				}
+			}
+		}
+
+		.address-section, .beneficiary-section {
+
+			.radio {
+				width: 100%;
+
+				label {
+					width: 28%;
+				}
+			}
+		}
+	}
+}
+
+.step-3 {
+
+	textarea {
+		height: 100px;
+		margin-bottom: 5px;
+	}
+
+	.secondary-btn {
+		font-size: 2em;
+		margin-top: 30px;
+		width: 150px;
+	}
+
+	.personal-section .secondary-btn {
+		margin-bottom: 50px;
+	}
+
+	@include mq(desktop) {
+
+		.form {
+			padding: 30px 90px;
+		}
+
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.title {
+			width: 100%;
+		}
+
+		.clear {
+			width: 100%;
+		}
+
+		.secondary-btn {
+			width: 200px;
+		}
+
+		.personal-section, .policy-section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.form-group {
+				width: calc((100% - 15px) / 2);
+
+				&._100p {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.policy-section {
+	margin-bottom: 50px;
+
+	._2field {
+		display: flex;
+		justify-content: space-between;
+
+		.group {
+			width: calc((100% - 10px) / 2);
+		}
+	}
+}
+
+.datepicker-dropdown.datepicker {
+	font-size: 18px;
+	padding: 5px;
+}
+
+.datepicker-dropdown.datepicker table td.datepicker-switch, .datepicker-dropdown.datepicker table th.datepicker-switch {
+	font-size: 22px;
+}
+
+.datepicker-dropdown.datepicker table td.dow, .datepicker-dropdown.datepicker table th.dow {
+	color: palette-color("tgia", "primary");
+	font-size: 14px;
+	font-family: $db-bd;
+}
+
+.datepicker-dropdown.datepicker table td.day, .datepicker-dropdown.datepicker table th.day {
+	line-height: 1.2;
+}
+
+.datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled.disabled:hover, .datepicker table tr td.active[disabled], .datepicker table tr td.active[disabled]:hover, .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active.disabled[disabled]:hover {
+	background-color: palette-color("tgia", "primary");
+	border-radius: 0;
+}

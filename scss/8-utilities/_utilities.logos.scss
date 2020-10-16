@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #LOGOS
+   ========================================================================== */
+
+.logo {
+	@include replace-text-with-img("logo.svg", center center, 158px, 29px);
+}
+
+.slogan {
+	@include replace-text-with-img("slogan.png", center center, 564px, 45px);
+}
+
+.logo-flag {
+	@include replace-text-with-img("flag.svg", center center, 135px, 78px);
+}
