@@ -1,0 +1,73 @@
+/* ==========================================================================
+   #TYPOGRAPHY
+   ========================================================================== */
+
+/**
+ * Fallback fonts
+ */
+
+$fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
+
+
+
+/**
+ * Primary fonts
+ */
+
+$db-bd: "db_heaventbold", $fallback;
+$db-med: "db_heaventmed", $fallback;
+$db: "db_heaventregular", $fallback;
+// $sarabun: "Sarabun", $fallback;;
+
+
+
+/**
+ * Letter spacing
+ */
+
+$global-letter-spacing:  0;
+
+
+
+/**
+ * Heading fonts style
+ */
+
+$heading-font-weight:  700;
+$heading-font-lh: 1.2;
+
+
+
+ /**
+ * Heading size
+ */
+
+$heading-size: (
+	h1: 		36px,
+	h2: 		28px,
+	h3: 		26px,
+	h4: 		24px,
+	h5: 		20px,
+	h6 : 	14px
+);
+
+
+
+/**
+ * Base fonts style
+ */
+
+$base-font-weight:  400;
+$base-font-lh: 1.8;
+$base-font-weight--bold:  700;
+
+
+
+/**
+ * Table fonts style
+ */
+
+$table-font-weight:  400;
+$table-font-lh: 1.6;
+$table-font-weight--bold:  700;
+

@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #FONTFACE
+   ========================================================================== */
+
+// DB Heavent
+@font-face {
+	font-family: 'db_heaventbold';
+	src: url('#{$font-path}/db_heavent/db_heavent_bd_v3.2.woff2') format('woff2'),
+		 url('#{$font-path}/db_heavent/db_heavent_bd_v3.2.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'db_heaventmed';
+	src: url('#{$font-path}/db_heavent/db_heavent_med_v3.2.woff2') format('woff2'),
+		 url('#{$font-path}/db_heavent/db_heavent_med_v3.2.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'db_heaventregular';
+	src: url('#{$font-path}/db_heavent/db_heavent_v3.2.woff2') format('woff2'),
+		 url('#{$font-path}/db_heavent/db_heavent_v3.2.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

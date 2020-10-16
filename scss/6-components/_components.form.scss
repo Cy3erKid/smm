@@ -1,0 +1,82 @@
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+
+.btn-select {
+	color: palette-color("tgia", "navy");
+	font-family: $db-bd;
+	font-size: 1.6em;
+	line-height: 1.2;
+	padding: 7px 10px;
+	// border-radius: $global-radius;
+	// margin-bottom: 15px;
+	// padding: 12px 15px;
+
+	// &.dropdown-toggle::after {
+	// 	background-image: url(#{$img-path}/icon-select.svg);
+	// 	background-repeat: no-repeat;
+	// 	background-position: center center;
+	// 	background-size: 8px 12px;
+	// 	border: none;
+	// 	height: 12px;
+	// 	width: 8px;
+	// }
+}
+
+// .btn-select-card {
+// 	border-color: #fff;
+// 	box-shadow: 0 4px 5px 0 rgba(13, 12, 138, 0.07);
+// 	margin-bottom: 0;
+// 	padding: 12px 10px;
+
+// 	&:hover, &:focus {
+// 		box-shadow: 0 4px 5px 0 rgba(13, 12, 138, 0.07);
+// 	}
+// }
+
+// .bootstrap-select>.dropdown-toggle.bs-placeholder {
+// 	color: #ddd;
+// }
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:active {
+	color: $primary-color;
+}
+
+.bootstrap-select>select.mobile-device:focus+.dropdown-toggle, .bootstrap-select .dropdown-toggle:focus {
+	outline: none !important;
+}
+
+.bootstrap-select {
+	background-color: #fff;
+	border-radius: $global-radius;
+	margin-bottom: 15px !important;
+	// padding: 12px 15px;
+	width: 100% !important;
+// 	font-size: 16px;
+
+	.dropdown-menu {
+		border: none;
+		box-shadow: 0 12px 20px 0 rgba(13, 12, 138, 0.07);
+		font-size: 1em;
+	}
+
+	.dropdown-item {
+		color: $primary-color;
+		font-family: $db-bd;
+		font-size: 1.4em;
+	}
+
+	.dropdown-item.active, .dropdown-item:active {
+		background-color: $primary-color;
+		color: #fff;
+	}
+}
+
+// .dropdown-header {
+// 	color: palette-color("tgia", "navy");
+// 	font-size: 16px;
+// }
+
+// .bootstrap-select .dropdown-menu li a.opt {
+// 	padding-left: 1.5rem;
+// }

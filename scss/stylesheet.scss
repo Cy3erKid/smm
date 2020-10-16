@@ -1,0 +1,113 @@
+/* ==========================================================================
+	TGIA
+   ========================================================================== */
+
+/**
+ * CONTENTS
+ */
+
+
+
+@import "0-settings/settings.config";
+@import "0-settings/settings.global";
+@import "0-settings/settings.typography";
+@import "0-settings/settings.fontface";
+@import "0-settings/settings.color";
+// @import "0-settings/settings.vendors";
+
+
+
+// VENDORS
+@import "1-vendors/bootstrap/bootstrap";
+@import "1-vendors/bootstrap/bootstrap-select";
+@import "1-vendors/bootstrap/bootstrap-datepicker";
+// @import "1-vendors/mmenu/mmenu";
+// @import "1-vendors/owl/owl.carousel.min";
+// @import "1-vendors/owl/owl.theme.default";
+
+
+
+// TOOLS
+@import "2-tools/tools.functions";
+@import "2-tools/tools.mixins";
+@import "2-tools/tools.hidden";
+@import "2-tools/tools.color";
+
+
+
+// GENERIC
+@import "3-generic/generic.box-sizing";
+@import "3-generic/generic.normalize";
+@import "3-generic/generic.reset";
+@import "3-generic/generic.shared";
+
+
+
+// ELEMENTS
+@import "4-elements/elements.document";
+@import "4-elements/elements.page";
+@import "4-elements/elements.headings";
+@import "4-elements/elements.links";
+@import "4-elements/elements.lists";
+@import "4-elements/elements.hr";
+@import "4-elements/elements.media";
+@import "4-elements/elements.tables";
+@import "4-elements/elements.blockquote";
+@import "4-elements/elements.forms";
+@import "4-elements/elements.buttons";
+
+
+
+// OBJECTS
+// @import "5-objects/objects.lists";
+// @import "5-objects/objects.wrapper";
+// @import "5-objects/objects.body";
+// @import "5-objects/objects.logo";
+// @import "5-objects/objects.header";
+// @import "5-objects/objects.modal";
+// @import "5-objects/objects.grid";
+// @import "5-objects/objects.canvas";
+// @import "5-objects/objects.footer";
+// @import "5-objects/objects.language";
+// @import "5-objects/objects.cards";
+// @import "5-objects/objects.button";
+// @import "5-objects/objects.form";
+// @import "5-objects/objects.menu";
+// @import "5-objects/objects.pagination";
+
+
+
+// COMPONENTS
+// @import "6-components/components.body";
+// @import "6-components/components.logo";
+// @import "6-components/components.header";
+// @import "6-components/components.modal";
+// @import "6-components/components.footer";
+// @import "6-components/components.cards";
+// @import "6-components/components.fontawesome";
+// @import "6-components/components.canvas";
+// @import "6-components/components.button";
+@import "6-components/components.form";
+// @import "6-components/components.tooltips";
+// @import "6-components/components.breadcrumb";
+
+
+
+// THEMES
+@import "7-themes/themes.tgia";
+
+
+
+// UTILITIES
+// @import "8-utilities/utilities.fontawesome";
+@import "8-utilities/utilities.logos";
+// @import "8-utilities/utilities.partnerlogos";
+// @import "8-utilities/utilities.helper";
+// @import "8-utilities/utilities.banklogos";
+// @import "8-utilities/utilities.icons";
+// @import "8-utilities/utilities.validation";
+
+
+
+// CHECKER
+// @import "9-checker/checker.vendors";
